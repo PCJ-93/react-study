@@ -11,7 +11,6 @@ function State01(){
     //const|let [변수명, set함수명] = useState(초기값);
     let [count, setCount] = useState(0);
 
-
     return(
         <div className="App">
             <h1>State01</h1>
@@ -29,12 +28,10 @@ function State01(){
                 setCount( count + 1 );
                 //setCount(1);
                 console.log('count증가클릭됨');
-                console.log(count);
+                console.log(count+1);
             }}>count증가(state)</button>
         </div>
     );
-
-
 };
 
 
