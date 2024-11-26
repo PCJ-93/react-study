@@ -1,3 +1,5 @@
+// 컴포넌트화 재료
+
 // function Box(props){ // 매개변수 props
 
 //     // props = {text:'아침'};
