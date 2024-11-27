@@ -53,12 +53,18 @@ function NewsBlog() {
                             }}>❤</span> {cnt[index]}</h4>
                             <p>내용 무</p>
                             <button onClick={()=>{
+                                let yn = window.confirm('삭제?');
+                                if(yn==true){
+                                    let temp = [...news];
+                                    temp.splice(index,1);
+                                    setNews(temp);
+                                    
+                                    cnt.splice(index, 1);
+                                } else {
+                                    return;
+                                }
                                 
-                                let temp = [...news];
-                                temp.splice(index,1);
-                                setNews(temp);
                                 
-                                cnt.splice(index, 1);
                                 
                             }}>삭제</button>
                         </div>
