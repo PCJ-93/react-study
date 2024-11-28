@@ -10,6 +10,7 @@ import Quiz002 from './practice/Quiz002';
 import NewsBlog from './newsblog/NewsBlog';
 import Quiz003 from './practice/Quiz003';
 import Practice002 from './practice/Practice002';
+import Quiz004 from './practice/Quiz004';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
   //return <Props02/>;
   //return <Quiz002/>;
   //return <Practice002/>;
-  return <NewsBlog/>;
+  //return <NewsBlog/>;
+  return <Quiz004/>;
 }
 
 export default App;
