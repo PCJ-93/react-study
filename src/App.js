@@ -12,7 +12,7 @@ import Quiz003 from './practice/Quiz003';
 import Practice002 from './practice/Practice002';
 import Quiz004 from './practice/Quiz004';
 import FoodMarket from './foodmarket/FoodMarket';
-
+import AppRS from './react_spring/AppRS';
 
 function App() {
   //return <Export01/>;
@@ -26,7 +26,8 @@ function App() {
   //return <Practice002/>;
   //return <NewsBlog/>;
   // return <Quiz004/>;
-  return <FoodMarket/>;
+  // return <FoodMarket/>;
+  return <AppRS />;
 }
 
 export default App;
