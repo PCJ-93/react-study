@@ -5,16 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TempApp from './TempApp';
 import { BrowserRouter } from 'react-router-dom';
+import {Provider} from 'react-redux';
+import store from './react_spring/store/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/* 컴포넌트 */}
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-    {/* <TempApp /> */}
-  </React.StrictMode>
+  // <React.StrictMode>
+    // {/* 컴포넌트 */}
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+    // {/* <TempApp /> */}
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
