@@ -2,6 +2,7 @@ import {configureStore, createSlice} from '@reduxjs/toolkit';
 
 
 
+
 // let [username, setUsername] = useState('tom');
 let userSlice = createSlice({  // redux에서의 useState 같은 역할
     name : 'username',
@@ -70,18 +71,6 @@ let weatherSlice = createSlice({
 
 export let { setWeatherInfo } = weatherSlice.actions;
 
-
-export default configureStore(
-    {
-        reducer: {
-            user : userSlice.reducer,
-            weather : weatherSlice.reducer,
-            company : companySlice.reducer
-        }
-    }
-)
-
-
 let companySlice = createSlice({
     name: "company",
     initialState: {
@@ -102,9 +91,19 @@ let companySlice = createSlice({
     }
 }
 )
-
 export let {changeAddress} = companySlice.actions;
 
 // import {changeAddress} ...
 
 // useSelector((state)=>{return state.company})
+
+
+export default configureStore(
+    {
+        reducer: {
+            user : userSlice.reducer,
+            weather : weatherSlice.reducer,
+            company : companySlice.reducer
+        }
+    }
+)

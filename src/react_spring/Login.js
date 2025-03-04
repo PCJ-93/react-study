@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-import { saveUserName, clearUserName, saveUserInfo, setWeatherInfo } from "./store/store";
+import { saveUserName, clearUserName, saveUserInfo, setWeatherInfo, changeAddress } from "./store/store";
 
 
 function Login(){
